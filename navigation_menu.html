@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>navigation menu</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+        nav{
+            height:40px;
+            background: lightseagreen;
+        }
+        ul.submenu{
+            background: #35f;
+            border-radius: 5px;
+            padding:0;
+        }
+        li a{
+            text-decoration: none;
+        }
+        nav ul li{
+            display: block;
+            width:150px;
+            margin:5px auto;
+            float: left;
+            text-align: center;
+            font-size: 32px;
+            line-height: 32px;
+            transition:height 0.3s linear;
+
+        }
+        nav ul li:hover{
+            background: lightcoral;
+        }
+        nav ul li:hover ul.submenu{
+            height:126px;
+        }
+        nav ul.submenu {
+            background: darkgray;
+            position: relative;
+            border-radius: 0 0 5px 5px;
+            height: 0px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li tabindex="0"><a href="#">Home</a></li>
+        <li tabindex="0">
+            <a href="#">Services</a>
+            <ul class="submenu">
+                <li tabindex="-1"><a href="#">送苹果</a></li>
+                <li tabindex="-1"><a href="#">送香蕉</a></li>
+                <li tabindex="-1"><a href="#">送芒果</a></li>
+            </ul>
+        </li>
+        <li tabindex="0"><a href="#">contact</a></li>
+    </ul>
+</nav>
+
+<script src="jquery-3.1.0.js"></script>
+<script>
+
+</script>
+</body>
+</html>
